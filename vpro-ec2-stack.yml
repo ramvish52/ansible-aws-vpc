@@ -1,0 +1,24 @@
+---
+- name: Setup vprofile Bastion Host
+  hosts: localhost
+  connection: local
+  gather_facts: no 
+  tasks:
+    - name: Import Bastion Host setup variables
+      include_vars: vars/vprostacksetup
+
+    - name: Import Bastion Host setup variables
+      include_vars: vars/output_vars
+
+    - name: create a new ec2 key pair, returns generated private key
+      ec2_key:
+        name: vprokey
+        region: "{{region}}"
+      register: vprokey_out
+
+    - name: store login key
+      copy:
+        content: "{{ vprokey_out.key.private_key }}"
+        dest: ./loginkey_vpro.pem
+        mode: 0400
+      when: keyout.changed
