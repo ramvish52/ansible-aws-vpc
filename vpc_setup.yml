@@ -54,7 +54,7 @@
         map_public: yes
         resource_tags:
           Name: vprofile-pubsub3
-      register: 
+      register: pubsub3_out
       
       - name: create Private subnet on zone1
       ec2_vpc_subnet:  
