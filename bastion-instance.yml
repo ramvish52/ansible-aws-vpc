@@ -2,7 +2,7 @@
 - name: Setup vprofile Bastion Host
   hosts: localhost
   connection: local
-  gather_fatcs: no 
+  gather_facts: no 
   tasks:
     - name: Import Bastion Host setup variables
       include_vars: vars/bation_setup
