@@ -20,3 +20,6 @@ zone2: us-east-2b
 zone3: us-east-2c
 
 state: present
+
+bastion_ami: ami-002068ed284fb165b
+MY_IP: 115.166.143.42/32
