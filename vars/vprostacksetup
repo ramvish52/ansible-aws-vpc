@@ -3,6 +3,7 @@ tomcat_ami: ami-08ee6644906ff4d6c
 memcache_ami: ami-08ee6644906ff4d6c
 rmq_ami: ami-08ee6644906ff4d6c
 mysql_ami: ami-08ee6644906ff4d6c
+BastionGid: sg-0bd9a40ce2c27e98c
 
 #Region name 
 region: "ap-south-1"
