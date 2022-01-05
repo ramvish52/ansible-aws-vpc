@@ -128,7 +128,7 @@
   #  - debug:
   #      var: NATGW_out
 
-    - name: Setup public route table
+    - name: Setup private route table
       ec2_vpc_route_table:
         vpc_id : "{{ vpcout.vpc.id }}"
         region: "{{ region }}"
