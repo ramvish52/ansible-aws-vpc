@@ -12,14 +12,14 @@ PrivSub2Cidr: 172.20.5.0/24
 PrivSub3Cidr: 172.20.6.0/24
 
 #Region name 
-region: "us-east-2"
+region: "ap-south-1"
 
 #zone name 
-zone1: us-east-2a
-zone2: us-east-2b
-zone3: us-east-2c
+zone1: ap-south-1a
+zone2: ap-south-1b
+zone3: ap-south-1c
 
 state: present
 
-bastion_ami: ami-002068ed284fb165b
+bastion_ami: ami-052cef05d01020f1d 
 MY_IP: 115.166.143.42/32
