@@ -125,8 +125,8 @@
         if_exist_do_not_create: true
       register: NATGW_out
 
-    - debug:
-        var: NATGW_out
+  #  - debug:
+  #      var: NATGW_out
 
     - name: Setup public route table
       ec2_vpc_route_table:
