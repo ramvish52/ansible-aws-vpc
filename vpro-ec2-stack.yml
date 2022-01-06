@@ -210,7 +210,7 @@
 
     - name: Insert/update Hosts IP and Name
       blockinfile:
-        path: provision-stack/group_vars/inventory-vpro
+        path: provision-stack/inventory-vpro
         block: |
           web01_ip: {{web01_out.tagged_instances[0].private_ip}}
           app01_ip: {{app01_out.tagged_instances[0].private_ip}}

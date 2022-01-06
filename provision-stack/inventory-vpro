@@ -1,0 +1,37 @@
+# BEGIN ANSIBLE MANAGED BLOCK
+web01_ip: 172.20.4.124
+app01_ip: 172.20.4.177
+rmq01_ip: 172.20.4.63
+mc01_ip: 172.20.4.160
+db01_ip: 172.20.4.41
+
+[websrvgrp]
+web01
+
+[appsrvgrp]
+app01
+
+[rmqsrvgrp]
+rmq01
+
+[mcsrvgrp]
+mc01
+
+[dbsrvgrp]
+db01
+
+[control]
+cntl
+
+[stack_inst:children]
+websrvgrp
+appsrvgrp
+rmqsrvgrp
+mcsrvgrp
+dbsrvgrp
+
+[stack_inst_vars]
+ansible_user=ubuntu
+ansible_ssh_private_key=login_vpro.pem
+#ansible_python_interpreter=/usr/bin/python3
+# END ANSIBLE MANAGED BLOCK
