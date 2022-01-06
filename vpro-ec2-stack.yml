@@ -245,5 +245,5 @@
 
           [stack_inst_vars]
           ansible_user=ubuntu
-          ansible_ssh_private_key=login_vpro.pem
+          ansible_ssh_private_key=loginkey_vpro.pem
           #ansible_python_interpreter=/usr/bin/python3
